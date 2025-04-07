@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Knitted Knot - Handmade Crocheting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Background image for the hero section */
+        .hero-bg {
+            background-image: url('images/your-background-image.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-[#14213D] text-[#FAF3DD]">
+    <!-- Header/Navigation -->
+    <header class="bg-[#FAF3DD] shadow-md">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="images/logo 2.png" alt="Logo" class="h-11 mr-0.5"> <!-- Add your logo image here -->
+                    <div class="text-2xl font-bold text-[#14213D]">The Knitted Knot</div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-[#14213D] hover:text-[#FCA311]">Home</a>
+                    <a href="#products" class="text-[#14213D] hover:text-[#FCA311]">Products</a>
+                    <a href="#about" class="text-[#14213D] hover:text-[#FCA311]">About</a>
+                    <a href="#contact" class="text-[#14213D] hover:text-[#FCA311]">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-2xl text-[#14213D]">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Background Image -->
+    <section class="py-20 px-6 hero-bg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">Crochet Crafted, Uniquely for you</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Because it is magic</p>
+            <a href="#products" class="bg-[#58B7C3] hover:bg-[#4DAFAD] text-[#14213D] px-8 py-3 rounded-full text-lg font-medium transition duration-300">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-[#FAF3DD]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-[#14213D]">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product cards will be added here with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-[#14213D]">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold mb-6 text-[#FAF3DD]">About Us</h2>
+                    <p class="mb-4 text-[#FAF3DD]">Welcome to The Knitted Knot!</p>
+                    <p class="text-[#FAF3DD]">We create stylish and cozy handmade crochet and knitted clothing. Every piece is crafted with love and care, making it unique and high-quality. From warm sweaters to cute accessories, we have something special for everyone.
+                        Join us in exploring the world of soft yarns and creative designs. Let’s add some warmth and style to your wardrobe! 🧶✨</p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-[#D6E4F0] h-64 rounded-lg flex items-center justify-center">
+                        <img src="images/about.jpeg" alt="About Us" class="h-full w-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-[#FAF3DD]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-[#14213D]">Get In Touch</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label class="block mb-2 text-[#14213D]">Name</label>
+                    <input type="text" class="w-full px-4 py-2 rounded border border-[#D6E4F0] focus:outline-none focus:ring-2 focus:ring-[#58B7C3] text-black">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2 text-[#14213D]">Email</label>
+                    <input type="email" class="w-full px-4 py-2 rounded border border-[#D6E4F0] focus:outline-none focus:ring-2 focus:ring-[#58B7C3] text-black">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2 text-[#14213D]">Message</label>
+                    <textarea class="w-full px-4 py-2 rounded border border-[#D6E4F0] focus:outline-none focus:ring-2 focus:ring-[#58B7C3] h-32 text-black"></textarea>
+                </div>
+                <button type="submit" class="bg-[#58B7C3] hover:bg-[#4DAFAD] text-[#14213D] px-6 py-2 rounded-full transition duration-300">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#14213D] text-[#FAF3DD] py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold">The Knitted Knot</h3>
+                    <p class="mt-2">Handmade with love</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-xl hover:text-[#FCA311]"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-xl hover:text-[#FCA311]"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-xl hover:text-[#FCA311]"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-[#D6E4F0] mt-6 pt-6 text-center">
+                <p>&copy; 2023 The Knitted Knot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const nav = document.querySelector('nav .hidden');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('right-6');
+            nav.classList.toggle('bg-[#FAF3DD]');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('rounded');
+            nav.classList.toggle('shadow-lg');
+        });
+
+        // Product data
+        const products = [
+            {
+                name: "Cozy Sweater",
+                price: "$45",
+                category: "sweaters",
+                description: "Warm and comfortable hand-knitted sweater",
+                image: "images/sweater.jpg"
+            },
+            {
+                name: "Winter Beanie",
+                price: "$25",
+                image: "images/beanie.jpg",
+                category: "beanies", 
+                description: "Soft beanie to keep you warm in cold weather"
+            },
+            {
+                name: "Chunky Scarf",
+                price: "$30",
+                image: "images/scarf.jpeg",
+                category: "scarfs",
+                description: "Thick scarf perfect for winter outfits"
+            },
+            {
+                name: "Earphone Case",
+                price: "$15",
+                image: "images/earbuds case.jpg",
+                category: "cases",
+                description: "Cute case to keep your earphones safe"
+            },
+            {
+                name: "Knot Pouch",
+                price: "$10",
+                image: "images/pouch.jpeg",
+                category: "Pouch",
+                description: "Protective and stylish crocheted Pouch"
+            },
+            {
+                name: "Easy Tie Bandana",
+                price: "$12",
+                image: "images/bandanas.jpeg",
+                category: "accessories",
+                description: "Elegant crocheted hair accessory"
+            }
+        ];
+
+        // Render products
+        function renderProducts() {
+            const container = document.querySelector('#products .grid');
+            container.innerHTML = products.map(product => `
+                <div class="bg-[#FAF3DD] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 h-80"> <!-- Increased height -->
+                    <div class="bg-[#D6E4F0] h-48 flex items-center justify-center">
+                        <img src="${product.image}" alt="${product.name}" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-[#14213D]">${product.name}</h3>
+                        <p class="text-[#FCA311] font-medium mb-3">${product.price}</p>
+                        <p class="text-[#14213D] mb-4">${product.description}</p>
+                        <button class="bg-[#58B7C3] hover:bg-[#4DAFAD] text-[#14213D] px-4 py-2 rounded-full text-sm transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            renderProducts();
+        });
+    </script>
+</body>
+</html>
